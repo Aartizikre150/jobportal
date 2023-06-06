@@ -1,0 +1,5 @@
+job_type.apply:
+  route_name: job_type.apply
+  title: 'Apply'
+  appears_on:
+    - entity.node.canonical

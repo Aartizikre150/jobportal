@@ -1,0 +1,8 @@
+uuid: c9eaf8f2-924b-40df-bd8a-ea87a5772dfe
+langcode: en
+status: true
+dependencies: {  }
+id: manage-job-provider
+label: Manage
+description: 'Job Provider manage menu'
+locked: false

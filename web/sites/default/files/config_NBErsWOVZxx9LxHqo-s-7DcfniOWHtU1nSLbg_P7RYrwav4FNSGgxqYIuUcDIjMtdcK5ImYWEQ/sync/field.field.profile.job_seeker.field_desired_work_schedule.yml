@@ -1,0 +1,19 @@
+uuid: 974f288b-bc4f-4d8f-8238-72e7e887c02c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_desired_work_schedule
+    - profile.type.job_seeker
+id: profile.job_seeker.field_desired_work_schedule
+field_name: field_desired_work_schedule
+entity_type: profile
+bundle: job_seeker
+label: 'Desired Work Schedule'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

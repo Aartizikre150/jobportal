@@ -1,0 +1,29 @@
+uuid: 1ec9b16c-f8af-4a32-a731-2386533e6a8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_desired_job_type
+    - profile.type.job_seeker
+    - taxonomy.vocabulary.job_type
+id: profile.job_seeker.field_desired_job_type
+field_name: field_desired_job_type
+entity_type: profile
+bundle: job_seeker
+label: 'Desired Job Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_type: job_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

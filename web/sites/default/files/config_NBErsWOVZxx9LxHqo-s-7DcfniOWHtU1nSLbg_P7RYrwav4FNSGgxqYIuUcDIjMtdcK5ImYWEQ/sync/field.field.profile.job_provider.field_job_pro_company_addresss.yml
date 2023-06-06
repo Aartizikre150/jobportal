@@ -1,0 +1,48 @@
+uuid: b1bfa47a-9038-4faa-8bff-4f770c1ba3e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_job_pro_company_addresss
+    - profile.type.job_provider
+  module:
+    - address
+id: profile.job_provider.field_job_pro_company_addresss
+field_name: field_job_pro_company_addresss
+entity_type: profile
+bundle: job_provider
+label: 'Company Addresss'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: CA
+    administrative_area: ''
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    given_name: ''
+    additional_name: null
+    family_name: ''
+default_value_callback: ''
+settings:
+  available_countries:
+    CA: CA
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+  fields: {  }
+field_type: address

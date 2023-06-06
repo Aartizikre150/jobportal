@@ -1,0 +1,29 @@
+uuid: 53d521b4-603b-4c88-8254-311acd4ddaeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - paragraphs_type_permissions
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create paragraph content work_experience'
+  - 'delete paragraph content work_experience'
+  - 'search content'
+  - 'update paragraph content work_experience'
+  - 'use text format restricted_html'
+  - 'view paragraph content work_experience'

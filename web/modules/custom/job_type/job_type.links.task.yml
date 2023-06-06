@@ -1,0 +1,5 @@
+job_type.user.job_provider_registration:
+  title: 'Job Provider Registrations'
+  weight: 10
+  route_name: job_type.user.job_provider_registration
+  base_route: user.page

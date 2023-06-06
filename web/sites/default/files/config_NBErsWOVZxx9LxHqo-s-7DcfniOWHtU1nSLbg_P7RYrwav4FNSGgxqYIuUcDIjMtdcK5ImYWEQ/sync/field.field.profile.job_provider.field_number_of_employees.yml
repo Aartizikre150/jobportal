@@ -1,0 +1,21 @@
+uuid: 6e12d78e-e5fe-45c7-8ee8-779dda8f08f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_number_of_employees
+    - profile.type.job_provider
+  module:
+    - options
+id: profile.job_provider.field_number_of_employees
+field_name: field_number_of_employees
+entity_type: profile
+bundle: job_provider
+label: "Your company's number of employees"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

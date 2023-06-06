@@ -1,0 +1,27 @@
+uuid: 4d5a5aff-339a-4479-8745-a66ba0b3c7dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_upload_resume
+    - profile.type.job_seeker
+  module:
+    - file
+id: profile.job_seeker.field_upload_resume
+field_name: field_upload_resume
+entity_type: profile
+bundle: job_seeker
+label: 'Upload resume'
+description: 'The maximum file upload size is limited to 4 KB.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx doc'
+  max_filesize: '300 KB'
+  description_field: false
+field_type: file

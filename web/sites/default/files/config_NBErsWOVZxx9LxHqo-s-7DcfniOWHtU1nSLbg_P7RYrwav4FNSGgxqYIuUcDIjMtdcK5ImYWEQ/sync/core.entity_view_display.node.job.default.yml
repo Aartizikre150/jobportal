@@ -1,0 +1,114 @@
+uuid: 2906dd91-91c5-429f-986b-badd25907c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.body
+    - field.field.node.job.field_company_name
+    - field.field.node.job.field_job_benefits
+    - field.field.node.job.field_job_deadline
+    - field.field.node.job.field_job_pay_rate
+    - field.field.node.job.field_job_preferred_start_date
+    - field.field.node.job.field_job_requirements
+    - field.field.node.job.field_job_type
+    - field.field.node.job.field_job_work_schedule
+    - field.field.node.job.field_pay_rate_type
+    - node.type.job
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_company_name:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_job_benefits:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_job_deadline:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_job_pay_rate:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_job_preferred_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_job_requirements:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_job_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_job_work_schedule:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_pay_rate_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

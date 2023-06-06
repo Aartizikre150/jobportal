@@ -1,0 +1,29 @@
+***************************** Content Import Begins ************************************ 
+ 
+ Data Type : body  Matches 
+Data Type : field_job_benefits  Matches 
+Data Type : field_job_deadline  Matches 
+Data Type : field_job_pay_rate  Matches 
+Data Type : field_job_preferred_start_date  Matches 
+Data Type : field_job_requirements  Matches 
+Data Type : field_job_type  Matches 
+Data Type : field_job_work_schedule  Matches 
+Data Type : field_pay_rate_type  Matches 
+Data Type : title  Matches 
+Data Type : langcode  Matches 
+********************************* Importing node ****************************  
+ 
+Importing Boolean (promote) ::  Success 
+Importing Content (body) ::  Success 
+Importing Content (field_company_name) ::  Success 
+Importing Content (field_job_benefits) ::  Success 
+Importing Datetime (field_job_deadline) ::  Success 
+Importing Datetime (field_job_preferred_start_date) ::  Success 
+Importing Content (field_job_requirements) ::  Success 
+Importing Reference Type (taxonomy_term) ::  Success 
+Importing Content (field_job_work_schedule) ::  Success 
+Importing Reference Type (taxonomy_term) ::  Success 
+Importing Content (title) ::  Success 
+Importing Content (author) ::  Success 
+********************* Node Imported successfully ********************* 
+

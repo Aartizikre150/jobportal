@@ -1,0 +1,14 @@
+uuid: 2bc0a455-5e7f-486f-8ed0-f058f756231c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_seeker
+  module:
+    - user
+id: user_add_role_action.job_seeker
+label: 'Add the Job seeker role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_seeker

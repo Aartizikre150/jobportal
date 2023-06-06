@@ -1,0 +1,21 @@
+uuid: 711de705-7bf8-47f5-94fe-d4312f46c3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_work_schedule
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_work_schedule
+field_name: field_job_work_schedule
+entity_type: node
+bundle: job
+label: 'Work Schedule'
+description: "The days and times of the week that you're expected to be at work"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

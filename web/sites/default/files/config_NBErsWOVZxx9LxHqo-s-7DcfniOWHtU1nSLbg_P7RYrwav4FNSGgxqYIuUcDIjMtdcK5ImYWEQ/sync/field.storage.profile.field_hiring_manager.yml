@@ -1,0 +1,27 @@
+uuid: 645cd9c4-61fd-4540-9cab-cfeb90742296
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_hiring_manager
+field_name: field_hiring_manager
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Yes'
+    -
+      value: '2'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

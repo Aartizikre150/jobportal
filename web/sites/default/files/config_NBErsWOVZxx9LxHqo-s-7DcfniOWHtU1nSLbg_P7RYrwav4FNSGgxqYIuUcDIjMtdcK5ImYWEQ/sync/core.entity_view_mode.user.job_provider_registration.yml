@@ -1,0 +1,10 @@
+uuid: 597e56d2-2a30-4cc3-8b12-2b19c1b3bbe1
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.job_provider_registration
+label: 'Job Provider Registration'
+targetEntityType: user
+cache: true

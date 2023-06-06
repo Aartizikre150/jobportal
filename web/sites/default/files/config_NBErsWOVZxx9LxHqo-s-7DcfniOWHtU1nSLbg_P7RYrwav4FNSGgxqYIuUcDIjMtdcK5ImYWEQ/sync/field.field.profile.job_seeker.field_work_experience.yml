@@ -1,0 +1,31 @@
+uuid: a209903e-0aec-42c1-929a-f7a8f3081953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_work_experience
+    - paragraphs.paragraphs_type.work_experience
+    - profile.type.job_seeker
+  module:
+    - entity_reference_revisions
+id: profile.job_seeker.field_work_experience
+field_name: field_work_experience
+entity_type: profile
+bundle: job_seeker
+label: 'Work Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      work_experience: work_experience
+    negate: 0
+    target_bundles_drag_drop:
+      work_experience:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

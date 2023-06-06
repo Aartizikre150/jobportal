@@ -1,0 +1,24 @@
+uuid: aaf2658a-2a0e-4644-ab53-4bab65bbf205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_preferred_start_date
+    - node.type.job
+  module:
+    - datetime
+id: node.job.field_job_preferred_start_date
+field_name: field_job_preferred_start_date
+entity_type: node
+bundle: job
+label: 'Preferred Start date'
+description: 'Enter the preferred start date.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

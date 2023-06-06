@@ -1,0 +1,21 @@
+uuid: f9c5d3bf-20a2-47bf-934c-7afad5e5dc75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_requirements
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_requirements
+field_name: field_job_requirements
+entity_type: node
+bundle: job
+label: 'Job requirements'
+description: 'Enter the job requirements.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

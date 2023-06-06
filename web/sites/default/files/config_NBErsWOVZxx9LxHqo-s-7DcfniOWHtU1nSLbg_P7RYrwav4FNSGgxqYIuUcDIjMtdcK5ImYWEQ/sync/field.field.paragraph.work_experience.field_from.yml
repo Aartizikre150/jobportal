@@ -1,0 +1,21 @@
+uuid: 65d800cd-7125-42c3-9017-01f024b32c46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_from
+    - paragraphs.paragraphs_type.work_experience
+  module:
+    - datetime
+id: paragraph.work_experience.field_from
+field_name: field_from
+entity_type: paragraph
+bundle: work_experience
+label: From
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

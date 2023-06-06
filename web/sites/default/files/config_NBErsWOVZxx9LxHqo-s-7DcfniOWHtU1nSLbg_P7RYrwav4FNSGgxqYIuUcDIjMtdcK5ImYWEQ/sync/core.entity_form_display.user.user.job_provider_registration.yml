@@ -1,0 +1,50 @@
+uuid: e8720cee-f86f-4299-95bd-4a83f1e35153
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.job_provider_registration
+    - field.field.user.user.user_picture
+  module:
+    - path
+    - profile
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.job_provider_registration
+targetEntityType: user
+bundle: user
+mode: job_provider_registration
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  job_provider_profiles:
+    type: profile_form
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+    third_party_settings: {  }
+  language:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  job_seeker_profiles: true
+  user_picture: true

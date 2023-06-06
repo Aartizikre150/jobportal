@@ -1,0 +1,90 @@
+<?php
+
+use Drupal\Core\Session\AccountInterface;
+use Drupal\user\Entity\User;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+
+function job_type_form_node_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == "node_job_form"  || $form_id == "node_job_edit_form") {
+    $form['title']['widget'][0]['value']['#title'] = t('Job Title');
+  }
+}
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function job_type_entity_type_build(array &$entity_types) {
+  $entity_types['user']->setFormClass('job_provider_registration', 'Drupal\user\ProfileForm');
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function job_type_entity_presave(EntityInterface $entity) {
+  // Check if the entity being saved is a user entity.
+  if ($entity instanceof User) {
+    // Check the form mode to determine if it's the specific form mode you want.
+    if ($entity->getEntityType()->id() == 'user' && \Drupal::routeMatch()->getRouteName() == 'job_type.user.job_provider_registration') {
+      // Assign the desired role to the user.
+      $role_id = 'job_provider'; // Replace with the desired role machine name.
+      $entity->addRole($role_id);
+    }
+    // Check the form mode to determine if it's the specific form mode you want.
+    if ($entity->getEntityType()->id() == 'user' && \Drupal::routeMatch()->getRouteName() == 'user.register') {
+      // Assign the desired role to the user.
+      $role_id = 'job_seeker'; // Replace with the desired role machine name.
+      $entity->addRole($role_id);
+    }
+  }
+}
+
+/**
+ * Set dynamic allowed values for the bundle field.
+ *
+ * @param \Drupal\field\Entity\FieldStorageConfig $definition
+ *   The field definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface|null $entity
+ *   The entity being created if applicable.
+ * @param bool $cacheable
+ *   Boolean indicating if the results are cacheable.
+ *
+ * @return array
+ *   An array of possible key and value options.
+ *
+ * @see options_allowed_values()
+ */
+function job_type_allowed_values_bundle(FieldStorageConfig $definition, ContentEntityInterface $entity = NULL, $cacheable) {
+  $current_user_role = \Drupal::currentUser()->getRoles();
+  if(in_array('administrator', $current_user_role)) {
+    $options = ['_none' => '- None -'];
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $profiles = $entity_type_manager->getStorage('profile')->loadByProperties(['type' => 'job_provider']);
+      foreach ($profiles as $profile) {
+      $company_name = $profile->get('field_job_provider_company_name')->value;
+      $options[$company_name] = $company_name;
+    }
+    return $options;
+  }
+
+  if(in_array('job_provider', $current_user_role)) {
+    $companies = ['_none' => '- None -'];
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $profiles = $entity_type_manager->getStorage('profile')->loadByProperties([
+      'uid' => \Drupal::currentUser()->id(),
+      'type' => 'job_provider']);
+      foreach ($profiles as $profile) {
+      $company_name = $profile->get('field_job_provider_company_name')->value;
+      $options[$company_name] = $company_name;
+    }
+    return $options;
+  }
+}

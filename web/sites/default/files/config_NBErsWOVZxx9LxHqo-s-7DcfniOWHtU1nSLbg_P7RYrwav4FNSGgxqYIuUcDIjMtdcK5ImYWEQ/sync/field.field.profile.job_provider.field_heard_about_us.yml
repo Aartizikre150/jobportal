@@ -1,0 +1,21 @@
+uuid: c01de2c0-3b08-43db-8e53-4c0391e44a0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_heard_about_us
+    - profile.type.job_provider
+  module:
+    - options
+id: profile.job_provider.field_heard_about_us
+field_name: field_heard_about_us
+entity_type: profile
+bundle: job_provider
+label: 'How you heard about us'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

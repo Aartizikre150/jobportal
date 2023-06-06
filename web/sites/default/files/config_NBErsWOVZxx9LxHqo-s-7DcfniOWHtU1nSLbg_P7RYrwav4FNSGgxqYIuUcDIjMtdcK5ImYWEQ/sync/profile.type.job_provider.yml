@@ -1,0 +1,13 @@
+uuid: b5e0357d-e88c-4268-b5bf-79b09d8d101f
+langcode: en
+status: true
+dependencies: {  }
+id: job_provider
+label: 'Job Provider'
+display_label: 'Job Provider'
+multiple: false
+registration: false
+roles:
+  job_provider: job_provider
+allow_revisions: true
+new_revision: true

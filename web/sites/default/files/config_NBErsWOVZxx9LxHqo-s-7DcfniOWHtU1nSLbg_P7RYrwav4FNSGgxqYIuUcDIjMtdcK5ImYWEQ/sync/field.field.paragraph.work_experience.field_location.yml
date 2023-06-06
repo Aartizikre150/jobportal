@@ -1,0 +1,47 @@
+uuid: 5082263a-5e9d-4697-996f-f6ff5272fa81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_location
+    - paragraphs.paragraphs_type.work_experience
+  module:
+    - address
+id: paragraph.work_experience.field_location
+field_name: field_location
+entity_type: paragraph
+bundle: work_experience
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine1:
+      override: hidden
+    addressLine2:
+      override: hidden
+    postalCode:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    locality:
+      override: required
+    administrativeArea:
+      override: required
+  fields: {  }
+field_type: address

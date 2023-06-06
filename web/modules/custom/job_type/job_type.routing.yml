@@ -1,0 +1,17 @@
+job_type.user.job_provider_registration:
+  path: '/user/job_provider'
+  defaults:
+    _entity_form: 'user.job_provider_registration'
+    _title: 'Job Provider Registrations'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+
+job_type.apply:
+  path: '/apply/{node}'
+  defaults:
+    _entity_form: 'user.job_provider_registration'
+    _title: 'Job Provider Registrations'
+  requirements:
+    _permission: 'view published content'
+    _user_is_logged_in: 'FALSE'
+    node: \d+

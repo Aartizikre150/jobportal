@@ -1,0 +1,8 @@
+uuid: 205de67e-12ea-4a16-bc20-221b9634619d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Types'
+vid: job_type
+description: 'list of Job Types'
+weight: 0

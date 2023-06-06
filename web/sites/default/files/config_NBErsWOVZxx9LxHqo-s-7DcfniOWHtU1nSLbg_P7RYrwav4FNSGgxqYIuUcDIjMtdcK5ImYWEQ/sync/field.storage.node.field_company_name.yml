@@ -1,0 +1,21 @@
+uuid: 53c605d4-3be4-4bd4-8e2c-a23a48565a73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_company_name
+field_name: field_company_name
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: 'job_type_allowed_values_bundle'
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

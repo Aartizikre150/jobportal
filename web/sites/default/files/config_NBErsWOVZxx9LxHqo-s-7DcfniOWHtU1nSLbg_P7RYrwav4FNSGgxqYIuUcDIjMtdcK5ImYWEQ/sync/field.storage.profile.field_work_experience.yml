@@ -1,0 +1,21 @@
+uuid: e9592281-7ea0-4d30-87a8-160aa3f60b5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - profile
+id: profile.field_work_experience
+field_name: field_work_experience
+entity_type: profile
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

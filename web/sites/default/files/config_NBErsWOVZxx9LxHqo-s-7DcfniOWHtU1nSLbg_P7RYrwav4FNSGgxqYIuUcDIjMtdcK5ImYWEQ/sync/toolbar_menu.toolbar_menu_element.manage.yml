@@ -1,0 +1,9 @@
+uuid: ef7a453f-4873-4bc1-b0b6-13d803804b2b
+langcode: en
+status: true
+dependencies: {  }
+id: manage
+label: Manage
+weight: null
+menu: manage-job-provider
+rewrite_label: true

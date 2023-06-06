@@ -1,0 +1,15 @@
+uuid: 30630eda-2df1-4ce7-af01-dc26f19d4810
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - toolbar
+id: job_seeker
+label: 'Job seeker'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access toolbar'
+  - 'view the administration theme'

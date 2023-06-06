@@ -1,0 +1,21 @@
+uuid: 98fbdbc3-c2c4-410b-995f-d1ba71503d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hiring_manager
+    - profile.type.job_provider
+  module:
+    - options
+id: profile.job_provider.field_hiring_manager
+field_name: field_hiring_manager
+entity_type: profile
+bundle: job_provider
+label: 'Are you a hiring manager?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

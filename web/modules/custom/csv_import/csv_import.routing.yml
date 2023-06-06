@@ -1,0 +1,7 @@
+csv_import.admin_settings:
+  path: '/admin/config/content/csv_import'
+  defaults:
+    _form: 'Drupal\csv_import\Form\csv_import'
+    _title: 'Content Import'
+  requirements:
+    _permission: 'administer site configuration'

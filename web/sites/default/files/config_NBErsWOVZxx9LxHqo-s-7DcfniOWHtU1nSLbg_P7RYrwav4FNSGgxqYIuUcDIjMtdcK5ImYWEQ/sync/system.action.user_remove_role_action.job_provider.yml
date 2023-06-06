@@ -1,0 +1,14 @@
+uuid: 5ea36711-e822-430a-a35c-fd9e8176d670
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_provider
+  module:
+    - user
+id: user_remove_role_action.job_provider
+label: 'Remove the Job provider role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_provider

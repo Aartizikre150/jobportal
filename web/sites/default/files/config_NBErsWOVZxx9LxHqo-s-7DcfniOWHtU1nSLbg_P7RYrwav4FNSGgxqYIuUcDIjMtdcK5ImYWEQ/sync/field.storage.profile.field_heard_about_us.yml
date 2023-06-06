@@ -1,0 +1,57 @@
+uuid: 11ff4b5c-053b-4576-bcbe-0e2d943c4f2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_heard_about_us
+field_name: field_heard_about_us
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Radio (AM/FM/XM)'
+      label: 'Radio (AM/FM/XM)'
+    -
+      value: TV
+      label: TV
+    -
+      value: 'Word of mouth'
+      label: 'Word of mouth'
+    -
+      value: Mail
+      label: Mail
+    -
+      value: 'Social media'
+      label: 'Social media'
+    -
+      value: 'Online video'
+      label: 'Online video'
+    -
+      value: Billboard
+      label: Billboard
+    -
+      value: Podcast
+      label: Podcast
+    -
+      value: 'Search engine (e.g. Google, Bing, Yahoo)'
+      label: 'Search engine (e.g. Google, Bing, Yahoo)'
+    -
+      value: 'Streaming audio (e.g. Spotify, Pandora)'
+      label: 'Streaming audio (e.g. Spotify, Pandora)'
+    -
+      value: Newspaper
+      label: Newspaper
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

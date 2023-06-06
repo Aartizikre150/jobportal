@@ -1,0 +1,20 @@
+uuid: 7aad6904-4696-47e9-819a-b3cf05d4b926
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - taxonomy
+id: profile.field_desired_job_type
+field_name: field_desired_job_type
+entity_type: profile
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

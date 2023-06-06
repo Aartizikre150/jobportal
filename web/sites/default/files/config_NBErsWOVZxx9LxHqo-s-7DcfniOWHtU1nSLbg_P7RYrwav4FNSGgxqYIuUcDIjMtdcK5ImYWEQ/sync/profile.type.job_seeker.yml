@@ -1,0 +1,13 @@
+uuid: 90a9b22d-c9ab-4791-a7d7-b45d62ff749b
+langcode: en
+status: true
+dependencies: {  }
+id: job_seeker
+label: 'Job seeker'
+display_label: 'Job seeker'
+multiple: false
+registration: true
+roles:
+  job_seeker: job_seeker
+allow_revisions: false
+new_revision: false

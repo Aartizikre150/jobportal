@@ -1,0 +1,21 @@
+uuid: aa0a508c-337e-4d96-bfb6-5d4ef00f1015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number
+    - profile.type.job_provider
+  module:
+    - telephone
+id: profile.job_provider.field_phone_number
+field_name: field_phone_number
+entity_type: profile
+bundle: job_provider
+label: 'Your phone number '
+description: 'For account management communication. Not visible to job seekers.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

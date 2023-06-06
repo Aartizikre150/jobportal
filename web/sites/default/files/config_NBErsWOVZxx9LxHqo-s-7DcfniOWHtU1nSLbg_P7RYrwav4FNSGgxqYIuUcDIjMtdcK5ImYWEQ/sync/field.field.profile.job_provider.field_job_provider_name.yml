@@ -1,0 +1,19 @@
+uuid: 4ae0a47a-6bf1-40dc-bb02-92b63af4c0a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_job_provider_name
+    - profile.type.job_provider
+id: profile.job_provider.field_job_provider_name
+field_name: field_job_provider_name
+entity_type: profile
+bundle: job_provider
+label: 'Your first and last name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,5 @@
+name: 'Google Meeting'
+type: module
+description: 'Provides Google Meeting functionality for Drupal.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Google Meeting

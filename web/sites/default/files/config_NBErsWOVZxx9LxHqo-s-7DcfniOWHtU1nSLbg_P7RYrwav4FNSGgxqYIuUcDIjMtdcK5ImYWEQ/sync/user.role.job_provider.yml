@@ -1,0 +1,30 @@
+uuid: 51a336a3-b433-4979-8f57-02f503c19a57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job
+  module:
+    - node
+    - profile
+    - system
+    - toolbar
+    - toolbar_menu
+id: job_provider
+label: 'Job provider'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access toolbar'
+  - 'administer site configuration'
+  - 'create job content'
+  - 'delete own job content'
+  - 'delete own job_seeker profile'
+  - 'edit own job content'
+  - 'update own job_provider profile'
+  - 'view manage in toolbar'
+  - 'view own job_provider profile'
+  - 'view own profile'
+  - 'view own unpublished profile'
+  - 'view the administration theme'

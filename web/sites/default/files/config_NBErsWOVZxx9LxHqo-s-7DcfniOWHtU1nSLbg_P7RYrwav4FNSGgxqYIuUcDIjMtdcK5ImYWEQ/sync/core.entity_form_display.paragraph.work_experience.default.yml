@@ -1,0 +1,66 @@
+uuid: 6702b242-058d-4f32-8040-602f974d604f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.work_experience.field_company
+    - field.field.paragraph.work_experience.field_from
+    - field.field.paragraph.work_experience.field_job_title
+    - field.field.paragraph.work_experience.field_location
+    - field.field.paragraph.work_experience.field_role_description
+    - field.field.paragraph.work_experience.field_to
+    - paragraphs.paragraphs_type.work_experience
+  module:
+    - address
+    - datetime
+    - text
+id: paragraph.work_experience.default
+targetEntityType: paragraph
+bundle: work_experience
+mode: default
+content:
+  field_company:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_from:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_job_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_location:
+    type: address_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_role_description:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_to:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,14 @@
+uuid: 76b71549-c920-43eb-bd41-fca9aef44c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_provider
+  module:
+    - user
+id: user_add_role_action.job_provider
+label: 'Add the Job provider role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: job_provider

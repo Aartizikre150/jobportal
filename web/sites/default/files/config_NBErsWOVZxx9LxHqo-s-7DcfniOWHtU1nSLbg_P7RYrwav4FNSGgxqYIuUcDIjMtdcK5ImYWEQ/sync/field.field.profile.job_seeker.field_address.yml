@@ -1,0 +1,58 @@
+uuid: c1b20b26-4db6-4449-8b90-3a53d68f9754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_address
+    - profile.type.job_seeker
+  module:
+    - address
+id: profile.job_seeker.field_address
+field_name: field_address
+entity_type: profile
+bundle: job_seeker
+label: Address
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: CA
+    administrative_area: ''
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries:
+    CA: CA
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine1:
+      override: required
+    addressLine2:
+      override: optional
+    postalCode:
+      override: required
+    locality:
+      override: required
+    administrativeArea:
+      override: required
+  fields: {  }
+field_type: address

@@ -1,0 +1,14 @@
+uuid: cd1b15ee-b5ce-45bc-8981-859e25676058
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.job_seeker
+  module:
+    - user
+id: user_remove_role_action.job_seeker
+label: 'Remove the Job seeker role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: job_seeker

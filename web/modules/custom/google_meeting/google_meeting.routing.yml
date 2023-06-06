@@ -1,0 +1,7 @@
+google_meeting.create_meeting_form:
+  path: '/custom-meeting/create'
+  defaults:
+    _controller: '\Drupal\google_meeting\Controller\CustomMeetingController::createMeetingForm'
+    _title: 'Create Meeting'
+  requirements:
+    _permission: 'access content'

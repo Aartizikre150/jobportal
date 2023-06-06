@@ -1,0 +1,42 @@
+uuid: bc669fdd-e267-4db1-b51e-d9011086d013
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_number_of_employees
+field_name: field_number_of_employees
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1 to 49'
+    -
+      value: '2'
+      label: '50 to 149'
+    -
+      value: '3'
+      label: '150 to 249'
+    -
+      value: '4'
+      label: '250 to 499'
+    -
+      value: '5'
+      label: '500 to 749'
+    -
+      value: '6'
+      label: '750 to 999'
+    -
+      value: '7'
+      label: 1000+
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

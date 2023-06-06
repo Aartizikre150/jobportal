@@ -1,0 +1,21 @@
+uuid: eb361917-dc75-40d9-a972-009613245980
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_contact_information
+    - profile.type.job_seeker
+  module:
+    - telephone
+id: profile.job_seeker.field_contact_information
+field_name: field_contact_information
+entity_type: profile
+bundle: job_seeker
+label: 'Contact information'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
